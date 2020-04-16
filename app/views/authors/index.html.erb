@@ -1,6 +1,7 @@
 <% @authors.each do |author| %>
-  <ul>
-    <li> <%= author.name %></li>
-    <li> <%= author.hometown %></li>
-  </ul>
+  <%= render partial: 'author', local: {post_author: author} %>
+  <%# <ul> %>
+  <%#   <li> <%= author.name %1></li> %>
+  <%#   <li> <%= author.hometown %1></li> %>
+  <%# </ul> %>
 <% end %>
